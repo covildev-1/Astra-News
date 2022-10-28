@@ -8,12 +8,12 @@
 }
 
 body{
-    margin: 0 60px;
+    margin: 0 6rem;
 }
 
 li{
-    margin-left: 10px;
-    padding: 5px;
+    margin-left: 3rem;
+    padding: 1.5rem;
     border: 1px solid blue;
     list-style: none;
 }
@@ -23,27 +23,52 @@ a{
 }
 
 nav.an_info{
-    padding: 10px 20px;
+    padding: 2.7rem 5rem;
     border: 1px solid red;
 }
 
 nav.an_menu{
     border: 1px solid red;
     display: flex;
-    justify-content: space-between;
+}
+
+a.an_media-links{
+    font-size: 3.1rem;
 }
 
 a.an_topico{
-    margin: 0 60px;
-    padding: 20px 27px;
-}
-
-nav.an_topicos, a{
-    padding: 10px;
+    margin: 0 6.3rem;
+    padding: 4rem 4.7rem;
+    font-size: 3.1rem;
 }
 
 p{
-    font-size: 12px;
+    font-size: 2.4rem;
+}
+
+div.an_blog{
+    border: 1px solid red;
+}
+
+div.an_banner{
+float: left;
+}
+
+div.an_title{
+    padding-left: 1rem;
+}
+
+div.an_description{
+    padding-left: 1rem;
+}
+
+a.an_banner-title{
+    font-size: 5rem;
+    text-align: left;
+}
+
+div.adsense{
+    border: 1px solid red;
 }
 
 .an_info{
@@ -58,10 +83,12 @@ p{
 
 .an_background{
     border: 1px solid red;
-    padding: 20px;
+    padding: 2rem;
 }
 
 .an_news{
     border: 1px solid red;
     display: flex;
+    justify-content: space-between;
+
 }
