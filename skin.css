@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    /* --var-scope: value; */
+}
+
+body{
+    margin: 0 60px;
+}
+
+li{
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px solid blue;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav.an_info{
+    padding: 10px 20px;
+    border: 1px solid red;
+}
+
+nav.an_menu{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+
+a.an_topico{
+    margin: 0 60px;
+    padding: 20px 27px;
+}
+
+nav.an_topicos, a{
+    padding: 10px;
+}
+
+p{
+    font-size: 12px;
+}
+
+.an_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.an_contato{
+    display: flex;
+}
+
+.an_background{
+    border: 1px solid red;
+    padding: 20px;
+}
+
+.an_news{
+    border: 1px solid red;
+    display: flex;
+}
