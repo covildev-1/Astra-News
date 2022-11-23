@@ -4,16 +4,28 @@
 }
 
 :root{
-    /* --var-scope: value; */
+        /* --var-scope: value; */
+    --universal-padding: 10px 15px;
+    --hover-color: rgba(0, 0, 0, 0.2);
+    --high-font: calc(0.62rem + 1vw);
+    --low-font: calc(0.42rem + 1vw);
 }
 
 body{
-    margin: 0 6rem;
+    margin: 0 6px;
+}
+
+ul{
+    width: 51%;
+}
+
+li:hover{
+    background-color: var(--hover-color);
 }
 
 li{
-    margin-left: 3rem;
-    padding: 1.5rem;
+    margin: 0 0 0 5px;
+    padding: 5px;
     border: 1px solid blue;
     list-style: none;
 }
@@ -23,27 +35,36 @@ a{
 }
 
 nav.an_info{
-    padding: 2.7rem 5rem;
+    padding: var(--universal-padding);
     border: 1px solid red;
+}
+
+nav.an_info img{
+    width: 74%;
 }
 
 nav.an_menu{
     border: 1px solid red;
     display: flex;
+    padding: 0 15px;
+    justify-content: space-between;
 }
 
 a.an_media-links{
-    font-size: 3.1rem;
+    font-size: var(--high-font);
+}
+
+a.an_topico:hover{
+    background-color: var(--hover-color);
 }
 
 a.an_topico{
-    margin: 0 6.3rem;
-    padding: 4rem 4.7rem;
-    font-size: 3.1rem;
+    font-size: var(--low-font);
+    padding: 10px 13px;
 }
 
 p{
-    font-size: 2.4rem;
+    font-size: var(--low-font);
 }
 
 div.an_blog{
@@ -51,44 +72,79 @@ div.an_blog{
 }
 
 div.an_banner{
-float: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div.an_banner img{
+    width: 100%;
+    height: 90%;
 }
 
 div.an_title{
-    padding-left: 1rem;
+    display: flex;
+    justify-content: left;
+    margin: 10px 5px;
 }
 
 div.an_description{
-    padding-left: 1rem;
+    display: flex;
+    text-align: left;
+    margin: 0 5px 10px 5px;
 }
 
 a.an_banner-title{
-    font-size: 5rem;
+    font-size: var(--high-font);
     text-align: left;
 }
 
 div.adsense{
     border: 1px solid red;
+    display: flex;
+    justify-content: center;
+}
+
+div.adsense img{
+    width: 40%;
 }
 
 .an_info{
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .an_contato{
     display: flex;
+    justify-content: space-between;
+    width: max-content;
 }
 
 .an_background{
     border: 1px solid red;
-    padding: 2rem;
+    padding: 10px 0;
 }
 
 .an_news{
     border: 1px solid red;
     display: flex;
     justify-content: space-between;
+    margin: 5px 15px;
+}
 
+.an_blog{
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    grid-template-rows: 1fr;
+}
+
+#box1{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#box3{
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
