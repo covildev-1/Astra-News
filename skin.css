@@ -1,169 +1,186 @@
-*{
+/*
+    ============================================================
+    ===============================GERAL==================================
+    ============================================================
+*/
+* {
     margin: 0;
     padding: 0;
-    font-family: "Trirong", sans-serif;
+    font-family: 'Trirong', sans-serif;
 }
 
-:root{
-        /* --var-scope: value; */
+:root {
+    /* --var-scope: value; */
     --universal-padding: 10px 15px;
 
-    --hover-color: rgba(0, 0, 0, 0.2);
-    --main-color: #303030;
     --bg-color: #202020;
-    --menu-color: #FF7700;
+    --main-color: #303030;
+    --menu-color: #ff7700;
+    --hover-color: rgba(0, 0, 0, 0.2);
     --adsense-color: #999999;
-    --reserve-color1: #251D3A;
-    --reserve-color2: #2A2550;
 
-    --high-font: calc(0.58rem + 1vw);
-    --mid-font: calc(0.51rem + 1vw);
-    --low-font: calc(0.45rem + 1vw);
+    --high-font: calc(0.37rem + 2vw);
+    --low-font: calc(0.27rem + 2vw);
 }
 
-body{
+/*
+    ============================================================
+    ===============================TAGS==================================
+    ============================================================
+*/
+body {
     background-color: var(--bg-color);
 }
 
-ul{
-    width: 51%;
-}
-
-li:hover{
-    background-color: var(--hover-color);
-}
-
-li{
-    margin: 0 0 0 5px;
-    padding: 5px;;
-    list-style: none;
-}
-
-a{
-    text-decoration: none;
-}
-
-nav.an_info{
+nav.an_info {
     padding: var(--universal-padding);
     background-color: var(--main-color);
 }
 
-nav.an_info img{
-    width: 85%;
+nav.an_info img {
+    width: 30vw;
 }
 
-nav.an_menu{
-    display: flex;
+nav.an_menu {
     padding: 0 15px;
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
     background-color: var(--menu-color);
 }
 
-a.an_media-links{
-    font-size: var(--high-font);
-    color: var(--menu-color);
+div.an_search input {
+    border-style: none;
+    background-color: var(--adsense-color);
+    color: var(--bg-color);
+    width: 20vw;
 }
 
-a.an_topico:hover{
-    background-color: var(--hover-color);
-    color: var(--main-color);
-}
-
-a.an_topico{
-    font-size: var(--mid-font);
-    padding: 10px 13px;
-}
-
-p{
-    display: flex;
-    text-align: left;
-    font-size: var(--low-font);
-    color: var(--adsense-color);
-}
-
-div.an_blog{
-}
-
-div.an_banner{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-div.an_banner img{
-    width: 90%;
-    height: 85%;
-}
-
-div.an_title{
-    display: flex;
-    margin: 0px 0px 10px 0px;
-    align-content: center;
-}
-
-div.an_description{
-    display: flex;
-    align-content: center;
-    margin: 0px 0px 10px 0px;
-}
-
-a.an_banner-title{
-    font-size: var(--high-font);
-    color: var(--menu-color);
-    text-align: left;
-}
-
-div.adsense{
-    margin: 0px 0px 10px 0px;
+div.adsense {
+    margin: 0px 0px 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: var(--adsense-color);
 }
 
-
-div.adsense h2{
+div.adsense h2 {
     padding: 20px;
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
 }
 
-div.adsense img{
-    width: 40%;
+div.adsense img {
+    width: 40vw;
 }
 
-.an_info{
+div.an_banner {
+    margin: 0px 0px 10px;
+    padding: 13px 0px 0px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.an_contato{
-    display: flex;
-    justify-content: space-between;
-    width: max-content;
+div.an_banner img {
+    width: 80vw;
+    height: 50vw;
 }
 
-.an_background{
+div.an_title,
+div.an_description {
+    margin: 0px 0px 10px;
+    display: flex;
+    align-content: center;
+}
+
+li:hover {
+    background-color: var(--hover-color);
+}
+
+li {
+    padding: 5px;
+    list-style: none;
+}
+
+li:last-child {
+    margin: 0 0 0 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.an_media-links {
+    font-size: var(--high-font);
+    color: var(--menu-color);
+}
+
+a.an_topico:hover {
+    background-color: var(--hover-color);
+    color: var(--main-color);
+}
+
+a.an_topico {
+    padding: 10px 13px;
+    font-size: var(--low-font);
+}
+
+a.an_banner-title {
+    font-size: var(--high-font);
+    color: var(--menu-color);
+    text-align: left;
+}
+
+p {
+    display: flex;
+    text-align: left;
+    font-size: var(--low-font);
+    color: var(--adsense-color);
+}
+
+/*
+    ============================================================
+    ===============================CLASSES==================================
+    ============================================================
+*/
+.an_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.an_contato {
+    display: flex;
+}
+
+.an_background {
     padding: 10px 0;
 }
 
-.an_news{
+.an_news {
+    margin: 5px 0px;
+    padding: 0px 15px;
     display: flex;
     justify-content: space-between;
-    padding: 0px 15px;
-    margin: 5px 0px;
     background-color: var(--main-color);
 }
 
-.an_blog{
+.an_blog {
     display: grid;
     grid-template-columns: 120px 1fr;
     grid-template-rows: 1fr;
 }
 
-#box1, #box2, #box3{
+/*
+    ============================================================
+    ===============================ID'S==================================
+    ============================================================
+*/
+#box1,
+#box2,
+#box3 {
     grid-column-start: 1;
     grid-column-end: 3;
 }
