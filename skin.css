@@ -6,21 +6,31 @@
 * {
     margin: 0;
     padding: 0;
+    font: inherit;
     font-family: 'Trirong', sans-serif;
 }
 
 :root {
-    /* --var-scope: value; */
-    --universal-padding: 10px 15px;
+    /*--var-scope: value; */
 
-    --bg-color: #202020;
-    --main-color: #303030;
+    --universal-padding: 10px 15px;
+    --main-color: #202020;
     --menu-color: #ff7700;
     --hover-color: rgba(0, 0, 0, 0.2);
     --adsense-color: #999999;
+    --reserve-color: #303030;
 
     --high-font: calc(0.37rem + 2vw);
     --low-font: calc(0.27rem + 2vw);
+}
+
+html {
+    color-scheme: dark light;
+}
+
+body {
+    min-width: 55vh;
+    background-color: var(--bg-color);
 }
 
 /*
@@ -28,10 +38,6 @@
     ===============================TAGS==================================
     ============================================================
 */
-body {
-    background-color: var(--bg-color);
-}
-
 nav.an_info {
     padding: var(--universal-padding);
     background-color: var(--main-color);
@@ -124,6 +130,7 @@ a.an_topico:hover {
 
 a.an_topico {
     padding: 10px 13px;
+    color: var(--main-color);
     font-size: var(--low-font);
 }
 
